@@ -1,5 +1,7 @@
 package com.wxm.unifyplatform.pojo.entity.authority;
 
+import javax.persistence.OrderBy;
+
 import com.wxm.base.pojo.dataobject.BaseDO;
 
 /**
@@ -13,7 +15,9 @@ public class AmMenu extends BaseDO {
     private String parentId; // 父ID
     private String menuName; // 菜单名称
     private String menuCode; // 菜单编码
+    @OrderBy
     private Integer level; // 级别
+    @OrderBy
     private Integer sort; // 排序
     private String url; // 链接地址
     private String remark; // 备注
