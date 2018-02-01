@@ -14,6 +14,7 @@ public class AmMenu extends BaseDO {
     private String menuName; // 菜单名称
     private String menuCode; // 菜单编码
     private Integer level; // 级别
+    private Integer sort; // 排序
     private String url; // 链接地址
     private String remark; // 备注
 
@@ -47,6 +48,14 @@ public class AmMenu extends BaseDO {
 
     public void setLevel(Integer level) {
         this.level = level;
+    }
+
+    public Integer getSort() {
+        return sort;
+    }
+
+    public void setSort(Integer sort) {
+        this.sort = sort;
     }
 
     public String getUrl() {
