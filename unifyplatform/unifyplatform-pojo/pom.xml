@@ -14,7 +14,6 @@
     <version.wxm>0.0.2-SNAPSHOT</version.wxm>
   </properties>
 
-
   <dependencies>
     <dependency>
       <groupId>${project.parent.groupId}</groupId>
