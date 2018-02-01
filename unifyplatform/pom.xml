@@ -9,7 +9,7 @@
   <modules>
     <module>unifyplatform-base</module>
     <module>unifyplatform-pojo</module>
-    <module>unifyplatform-dao</module>
+    <module>unifyplatform-mapper</module>
     <module>unifyplatform-service</module>
     <module>unifyplatform-web-back</module>
   </modules>

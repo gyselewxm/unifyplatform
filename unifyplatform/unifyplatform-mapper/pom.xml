@@ -5,7 +5,7 @@
     <artifactId>unifyplatform</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>unifyplatform-dao</artifactId>
-  <name>unifyplatform-dao</name>
+  <artifactId>unifyplatform-mapper</artifactId>
+  <name>unifyplatform-mapper</name>
   <description>统一平台持久层</description>
 </project>
