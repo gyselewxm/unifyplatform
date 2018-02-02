@@ -2,7 +2,7 @@ package com.wxm.unifyplatform.service.authority.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.wxm.service.abs.ACRUDService;
+import com.wxm.service.base.abs.ACRUDService;
 import com.wxm.unifyplatform.pojo.bo.authority.AmUserBO;
 import com.wxm.unifyplatform.pojo.entity.authority.AmUser;
 import com.wxm.unifyplatform.service.authority.IAmUserService;

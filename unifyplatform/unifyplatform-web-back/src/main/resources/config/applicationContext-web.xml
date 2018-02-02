@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                      http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+  <!--启动对AspectJ注解的支持，proxy-target-class等于true是强制使用cglib代理 -->
+  <aop:aspectj-autoproxy proxy-target-class="true" />
+
+  <!-- DispatcherServlet上下文，只搜索@Controller标注的类，不搜索其他标注的类 -->
+  <context:component-scan base-package="com.wxm.unifyplatform.web">
+    <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+  </context:component-scan>
+
+  <!-- 扩充了注解驱动，可以将请求参数绑定到控制器参数 -->
+  <!-- 1、自动注册DefaultAnnotationHandlerMapping，AnnotationMethodHandlerAdapter主键 -->
+  <!-- 2、提供一系列：数据绑定，数字和日期的format，@NumberDormat，@DataTimeFormat，xml，json默认读写支持 -->
+  <mvc:annotation-driven>
+    <mvc:message-converters>
+      <!-- 使用Jackson来提供Json的序列化操作 -->
+      <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+    </mvc:message-converters>
+  </mvc:annotation-driven>
+</beans>

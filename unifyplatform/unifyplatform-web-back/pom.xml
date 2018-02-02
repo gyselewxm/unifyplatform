@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.wxm.unifyplatform</groupId>
@@ -8,4 +9,23 @@
   <artifactId>unifyplatform-web-back</artifactId>
   <name>unifyplatform-web-back</name>
   <description>统一平台后台管理</description>
+
+  <!-- 变量设置 -->
+  <properties>
+    <version.wxm>0.0.2-SNAPSHOT</version.wxm>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.parent.groupId}</groupId>
+      <artifactId>unifyplatform-service</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <!-- WXM -->
+    <dependency>
+      <groupId>com.wxm</groupId>
+      <artifactId>wxm-web</artifactId>
+      <version>${version.wxm}</version>
+    </dependency>
+  </dependencies>
 </project>

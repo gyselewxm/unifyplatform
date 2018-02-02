@@ -1,6 +1,6 @@
 package com.wxm.unifyplatform.service.authority;
 
-import com.wxm.service.ICRUDService;
+import com.wxm.service.base.ICRUDService;
 import com.wxm.unifyplatform.pojo.bo.authority.AmMenuOperationBO;
 import com.wxm.unifyplatform.pojo.entity.authority.AmMenuOperation;
 
