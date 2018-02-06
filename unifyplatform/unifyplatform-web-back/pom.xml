@@ -28,4 +28,20 @@
       <version>${version.wxm}</version>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+          <warName>${project.artifactId}</warName>
+          <version>3.1</version>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <packaging>war</packaging>
 </project>
