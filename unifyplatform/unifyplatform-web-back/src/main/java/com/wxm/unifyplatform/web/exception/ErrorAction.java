@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("error")
-public class ErrorController {
+public class ErrorAction {
 
     @GetMapping("500")
     public String error500() {
