@@ -13,6 +13,7 @@
   <!-- 变量设置 -->
   <properties>
     <version.wxm>0.0.2-SNAPSHOT</version.wxm>
+    <version.snakeyaml>1.19</version.snakeyaml>
   </properties>
 
   <dependencies>
@@ -26,6 +27,12 @@
       <groupId>com.wxm</groupId>
       <artifactId>wxm-web</artifactId>
       <version>${version.wxm}</version>
+    </dependency>
+    <!-- 配置文件读取 -->
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>${version.snakeyaml}</version>
     </dependency>
   </dependencies>
 

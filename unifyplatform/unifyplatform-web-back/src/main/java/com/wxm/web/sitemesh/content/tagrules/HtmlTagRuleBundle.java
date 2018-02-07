@@ -1,4 +1,4 @@
-package com.wxm.unifyplatform.sitemesh.content.tagrules;
+package com.wxm.web.sitemesh.content.tagrules;
 
 import org.sitemesh.SiteMeshContext;
 import org.sitemesh.content.ContentProperty;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("sitemesh")
-public class SiteMeshController {
+public class SiteMeshAction {
 
     @GetMapping("tpl-default")
     public String tplDefault() {

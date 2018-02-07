@@ -1,9 +1,9 @@
-package com.wxm.unifyplatform.sitemesh.config;
+package com.wxm.web.sitemesh.config;
 
 import org.sitemesh.builder.SiteMeshFilterBuilder;
 import org.sitemesh.config.ConfigurableSiteMeshFilter;
 
-import com.wxm.unifyplatform.sitemesh.content.tagrules.HtmlTagRuleBundle;
+import com.wxm.web.sitemesh.content.tagrules.HtmlTagRuleBundle;
 
 /**
  * <b>标题: </b> 自定义SiteMesh页面布局过滤器 <br/>
