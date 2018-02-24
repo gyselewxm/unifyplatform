@@ -18,7 +18,7 @@ public class WxmFreeMarkerView extends FreeMarkerView {
     @Override
     protected void exposeHelpers(Map<String, Object> model, HttpServletRequest request) throws Exception {
         model.put("ctx", request.getContextPath()); // 上下文
-        model.put("res", "http://localhost:8080/resources"); // 前端静态文件域名
+        model.put("res", "http://localhost:8080/resources/backend-v1"); // 前端静态文件域名
         super.exposeHelpers(model, request);
     }
 

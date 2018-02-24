@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
-  version="3.1" metadata-complete="true">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" version="3.1"
+  metadata-complete="true">
 
   <!-- 可参考web.xml配置详解http://blog.csdn.net/sxbjffsg163/article/details/9955493 -->
   <display-name>unifyplatform-web-back</display-name>
@@ -36,7 +37,7 @@
   <!-- 页面布局过滤器 -->
   <filter>
     <filter-name>sitemeshFilter</filter-name>
-    <filter-class>com.wxm.unifyplatform.sitemesh.config.WxmConfigurableSiteMeshFilter</filter-class>
+    <filter-class>com.wxm.web.sitemesh.config.WxmConfigurableSiteMeshFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>sitemeshFilter</filter-name>

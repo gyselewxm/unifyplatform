@@ -1,4 +1,4 @@
-package com.wxm.unifyplatform.web.config;
+package com.wxm.unifyplatform.web.sitemesh;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

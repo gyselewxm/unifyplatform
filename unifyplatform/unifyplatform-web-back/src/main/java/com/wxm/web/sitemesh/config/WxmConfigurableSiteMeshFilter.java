@@ -16,10 +16,8 @@ public class WxmConfigurableSiteMeshFilter extends ConfigurableSiteMeshFilter {
 
     @Override
     protected void applyCustomConfiguration(SiteMeshFilterBuilder builder) {
-        builder.addDecoratorPath("/*", "/sitemesh/tpl-default")
-        // 默认装饰器，当下面的路径都不匹配时，启用该装饰器进行装饰
-                .addExcludedPath("/css/*")
-                // 忽略js
+        builder.addExcludedPath("/css/*")
+        // 忽略js
                 .addExcludedPath("/js/*")
                 // 忽略fonts
                 .addExcludedPath("/fonts/*")
@@ -32,7 +30,9 @@ public class WxmConfigurableSiteMeshFilter extends ConfigurableSiteMeshFilter {
                 // 忽略base
                 .addExcludedPath("/base/*")
                 // 添加自定义Html标签
-                .addTagRuleBundle(new HtmlTagRuleBundle());
+                .addTagRuleBundle(new HtmlTagRuleBundle())
+                // 默认装饰器，当下面的路径都不匹配时，启用该装饰器进行装饰
+                .addDecoratorPath("/*", "/sitemesh/tpl-default");
     }
 
 }

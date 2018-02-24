@@ -2,6 +2,7 @@ package com.wxm.unifyplatform.web.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * <b>Title:</b> 登录管理 <br>
@@ -11,10 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
  * <b>Version:</b> 1.0.0
  */
 @Controller
+@RequestMapping("login")
 public class LoginAction {
 
     @GetMapping
-    public String login(){
+    public String login() {
         return "home/login";
     }
 }
